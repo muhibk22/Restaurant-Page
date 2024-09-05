@@ -1,3 +1,5 @@
+import {createParagraph, createH1, createH2} from "./create.js";
+
 function menuPage(){
     const home=document.createElement("div");
     home.classList.add("menu");
@@ -5,13 +7,6 @@ function menuPage(){
     home.appendChild(createParagraph("lmao xd"));
     return home;
 };
-
-
-function createParagraph(content){
-    const paragraph=document.createElement("p");
-    paragraph.textContent=content;
-    return paragraph;
-}
 
 function loadMenuPage(){
     const container=document.getElementById("content");
