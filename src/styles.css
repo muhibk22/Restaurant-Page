@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+h1,h3,p,ul{
+    margin: 1rem 0;
+}
 body{
     background-color: rgb(0, 0, 0);
     background-image: url(images/background.jpg);
@@ -10,7 +13,9 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav{
@@ -33,10 +38,6 @@ nav h1{
     margin-bottom: 2px;
     font-size: 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#content{
-    margin-top: 100px;
 }
 
 .nav-button{
@@ -62,15 +63,21 @@ nav h1{
     align-items: center;
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 120px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 50px;
 }
 .home{
-    background-color: pink;
-    height: 400px;
-    width: 70vw;
+   text-align: center;
+}
+.intro{
+    width: 55ch;
+}
+.list{
+    text-align: left;
 }
 .menu{
-    background-color: blue;
-    height: 400px;
-    width: 70vw;
+    
 }
 

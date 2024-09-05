@@ -1,4 +1,4 @@
-import {createParagraph, createH1, createH2} from "./create.js";
+import make from "./create.js";
 
 function menuPage(){
     const home=document.createElement("div");
