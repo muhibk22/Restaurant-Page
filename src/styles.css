@@ -56,3 +56,21 @@ nav h1{
 .nav-buttons:last-child{
     margin-right:40px ;
 }
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home{
+    background-color: pink;
+    height: 400px;
+    width: 70vw;
+}
+.menu{
+    background-color: blue;
+    height: 400px;
+    width: 70vw;
+}
+
