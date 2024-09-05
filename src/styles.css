@@ -1,6 +1,7 @@
 *::before, *, *::after{
     margin:0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 h1,h3,p,ul{
@@ -27,7 +28,7 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5em 0;
+    padding: 1.2rem 0;
     z-index: 1000;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -35,7 +36,6 @@ nav{
 
 nav h1{
     margin-left: 40px;
-    margin-bottom: 2px;
     font-size: 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -70,9 +70,21 @@ nav h1{
 }
 .home{
    text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.home img{
+    max-width: 450px;
+    border-radius: 50%;
+    margin: 20px;
 }
 .intro{
     width: 55ch;
+}
+ul li{
+    margin-left: 1rem;
 }
 .list{
     text-align: left;
