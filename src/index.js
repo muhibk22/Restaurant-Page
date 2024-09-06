@@ -5,7 +5,7 @@ import about from "./about.js";
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    menu();
+    homepage();
 
     const homeButton=document.getElementById("nav-home");
     const menuButton=document.getElementById("nav-menu");
