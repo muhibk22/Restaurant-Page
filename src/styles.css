@@ -19,7 +19,7 @@ body{
     align-items: center;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,13 +34,17 @@ nav{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav h1{
+nav h1 {
     margin-left: 40px;
     font-size: 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.nav-button{
+.nav-buttons {
+    display: flex;
+}
+
+.nav-button {
     margin: 0 20px;
     padding: 10px 20px;
     background-color: transparent;
@@ -52,11 +56,19 @@ nav h1{
     transition: border-bottom 0.15s;
     outline: none;
 }
-.nav-button:hover{
+
+.nav-button:hover {
     border-bottom: 2px solid white;
 }
-.nav-buttons:last-child{
-    margin-right:40px ;
+
+.nav-toggle {
+    display: none; /* Hide toggle button by default */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 40px;
 }
 .content{
     display: flex;
@@ -149,5 +161,26 @@ ul li{
     }
     .about{
         width: 90vw;
+    }
+
+
+    .nav-buttons {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .nav-buttons.show {
+        display: flex; 
+    }
+
+    .nav-toggle {
+        display: block; 
     }
 }

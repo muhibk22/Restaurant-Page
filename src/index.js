@@ -15,5 +15,11 @@ document.addEventListener("DOMContentLoaded", function() {
     menuButton.addEventListener("click",menu);
     aboutButton.addEventListener("click",about);
 
+    const navToggle = document.querySelector('.nav-toggle');
+    const navButtons = document.querySelector('.nav-buttons');
+
+    navToggle.addEventListener('click', () => {
+        navButtons.classList.toggle('show');
+    });
 
 });
