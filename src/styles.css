@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-h1,h3,p,ul{
+h1,h2,h3,p,ul{
     margin: 1rem 0;
 }
 body{
@@ -63,7 +63,7 @@ nav h1{
     align-items: center;
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 200px 0 100px 0;
+    margin: 175px 0 100px 0;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 10px 50px;
@@ -92,7 +92,27 @@ ul li{
     text-align: left;
 }
 .menu{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    width: 100%;
+    place-items: center;
+    margin-top: 2rem;
+}
+.grid img{
+    width: 100%;
+}
+
+.item{
+    display: grid;
+    place-items: center;
 }
 
 @media (max-width:768px){
