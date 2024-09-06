@@ -101,23 +101,32 @@ ul li{
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem;
+    grid-template-rows: 1fr 1fr;
+    gap: 4rem;
     width: 100%;
     place-items: center;
     margin-top: 2rem;
 }
-.grid img{
+.item img{
     width: 100%;
+    aspect-ratio: 1/0.8;
+    object-fit: cover;
 }
 
 .item{
-    display: grid;
-    place-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.62);
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 2rem;
 }
 
 @media (max-width:768px){
     .content{
         padding: 10px;
         width: 90vw;
+    }
+    .grid{
+        grid-template-columns: 1fr;
     }
 }
