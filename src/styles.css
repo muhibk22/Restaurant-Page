@@ -50,6 +50,7 @@ nav h1{
     font-size: 1.3rem;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.15s;
+    outline: none;
 }
 .nav-button:hover{
     border-bottom: 2px solid white;
@@ -121,6 +122,19 @@ ul li{
     padding: 2rem;
 }
 
+.about{
+    width: 50vw;
+}
+
+.about p{
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.about p:last-of-type{
+    border: none;
+}
+
 @media (max-width:768px){
     .content{
         padding: 10px;
@@ -128,5 +142,12 @@ ul li{
     }
     .grid{
         grid-template-columns: 1fr;
+    }
+
+    p{
+        font-size: 0.8rem;
+    }
+    .about{
+        width: 90vw;
     }
 }
