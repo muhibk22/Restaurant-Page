@@ -10,16 +10,29 @@ document.addEventListener("DOMContentLoaded", function() {
     const homeButton=document.getElementById("nav-home");
     const menuButton=document.getElementById("nav-menu");
     const aboutButton=document.getElementById("nav-about");
-
-    homeButton.addEventListener("click",homepage);
-    menuButton.addEventListener("click",menu);
-    aboutButton.addEventListener("click",about);
-
     const navToggle = document.querySelector('.nav-toggle');
     const navButtons = document.querySelector('.nav-buttons');
+    const nav=document.querySelector('nav');
 
-    navToggle.addEventListener('click', () => {
-        navButtons.classList.toggle('show');
+    homeButton.addEventListener("click",() => {
+        homepage();
+        toggle();
     });
+    menuButton.addEventListener("click",() => {
+        menu();
+        toggle();
+    });
+    aboutButton.addEventListener("click",() => {
+        about();
+        toggle();
+    });
+
+
+    navToggle.addEventListener('click', toggle);
+
+    function toggle(){
+        navButtons.classList.toggle('show');
+        nav.classList.toggle('dark');
+    }
 
 });
